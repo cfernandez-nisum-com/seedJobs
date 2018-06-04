@@ -3,7 +3,8 @@
 for(i in 0..5) {
 	job("Testing-number-${i}"){
 	steps{
-		shell('echo My number is ${i}')
+		a=$i
+		shell('echo My number is ${a}')
 		}
 	}
 }
